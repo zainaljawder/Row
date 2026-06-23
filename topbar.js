@@ -20,7 +20,7 @@
   // -------- CSS --------
   const css = `
 .topbar {
-  position: sticky; top: 0; z-index: 40;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 40;
   display: flex; gap: 6px;
   padding: max(12px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) 10px max(14px, env(safe-area-inset-left));
   /* Fully opaque so each page's body background can't bleed through
