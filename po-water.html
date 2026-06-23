@@ -84,7 +84,10 @@ html, body {
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
-.shell { max-width: 720px; margin: 0 auto; padding: calc(max(12px, env(safe-area-inset-top)) + 44px) max(16px, env(safe-area-inset-right)) 80px max(16px, env(safe-area-inset-left)); }
+.shell { max-width: 720px; margin: 0 auto; padding: max(20px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 80px max(16px, env(safe-area-inset-left)); }
+@media (max-width: 768px) {
+  .shell { padding-top: calc(max(12px, env(safe-area-inset-top)) + 56px); }
+}
 
 /* ----- Top day pill + header ----- */
 .day-pill {
@@ -453,7 +456,7 @@ html, body {
 .modal-actions .btn-primary { flex: 1; }
 
 @media (max-width: 480px) {
-  .shell { padding: calc(max(12px, env(safe-area-inset-top)) + 44px) max(12px, env(safe-area-inset-right)) 60px max(12px, env(safe-area-inset-left)); }
+  .shell { padding: calc(max(12px, env(safe-area-inset-top)) + 56px) max(12px, env(safe-area-inset-right)) 60px max(12px, env(safe-area-inset-left)); }
   .water-num { font-size: 48px; }
 }
 </style>
